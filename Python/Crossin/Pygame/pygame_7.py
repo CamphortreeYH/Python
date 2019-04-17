@@ -23,13 +23,13 @@ class Enemy:
         self.y = random.randint(-200, -50)
         self.speed = random.random() + 0.1
 
-    def __init__():
+    def __init__(self):
         self.restart()
         self.image = pygame.image.load("enemy.png").convert_alpha()
 
     def move(self):
         if self.y < 800:
-            self.y += self.spped
+            self.y += self.speed
         else:
             self.restart()
 
@@ -44,7 +44,7 @@ enemy = Enemy()
 
 while True:
     for event in pygame.event.get():
-        if event.typt == pygame.QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit()
             exit()
     screen.blit(background, (0, 0))
