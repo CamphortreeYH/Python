@@ -25,7 +25,7 @@ bullet = Bullet()
 
 while True:
     for event in pygame.event.get():
-        if event.typt == pygame.QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit()
             exit()
     screen.blit(background, (0, 0))
