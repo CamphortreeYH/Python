@@ -1,0 +1,4 @@
+LiuBei: 200
+GuanYu: 205
+ZhangFei: 376
+ZhugeLiang: 100
