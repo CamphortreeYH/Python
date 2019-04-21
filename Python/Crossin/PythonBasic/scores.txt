@@ -1,4 +1,0 @@
-LiuBei 23 35 44 47 51
-GuanYu 60 77 68
-ZhangFei 97 99 89 91
-ZhugeLiang 100
