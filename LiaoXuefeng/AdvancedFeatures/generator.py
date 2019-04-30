@@ -71,3 +71,24 @@ def fab(max):
 
 for n in fab(5):
     print n
+
+ 
+#杨辉三角
+def triangles():
+    # 定义最初的数据 1 ，存到列表中
+    lt = [1]
+    # 进入循环
+    while True:
+        # 使用yield语句产生一个生成器，返回当前列表
+        yield lt
+        # 列表后追加元素 0
+        lt.append(0)
+        # 列表生成式：原列表中前一项与后一项相加
+        lt = [lt[i -1] + lt[i] for i in range(len(lt))]
+
+n = 0
+for i in triangles():
+    print i
+    n += 1
+    if n == 10:
+        break
