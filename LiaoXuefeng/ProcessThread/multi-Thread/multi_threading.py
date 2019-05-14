@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time, threading
 
 #新线程执行的代码:
