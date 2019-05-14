@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time, threading
 
 #假定这是你的银行存款：
