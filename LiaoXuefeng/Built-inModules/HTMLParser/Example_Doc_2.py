@@ -52,7 +52,7 @@ parser.feed('<!-- a comment -->'
 #解析命名和数字字符引用并将它们转换为正确的char（注意：这3个引用都等效于'>'）：
 parser.feed('&gt;&#62;&#x3E;')
 
-向feed()提供不完整的块可以工作，但handle_data()可能会被调用多次（除非convert_charrefs设置为True）：
+#向feed()提供不完整的块可以工作，但handle_data()可能会被调用多次（除非convert_charrefs设置为True）：
 for chunk in ['<sp', 'an>buff', 'ered ', 'text</s', 'pan>']:
     parser.feed(chunk)
 
